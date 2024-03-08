@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.loading-animation-bg {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+.loading-animation-bg > section {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000342;
+    /* animation: animateBg 5s linear 5s 1 forwards; */
+}
+/* animate your bg here */
+/* @keyframes animateBg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+    100% {
+        opacity: 0;
+    }
+} */
+
+.loading-animation h1 {
+    font-size: 34px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 1;
+
+    animation: h1Animate 5s linear infinite;
+    animation-delay: 0.5s;
+}
+/* animate first h1 here... */
+@keyframes h1Animate {
+    0% {
+        color: #ffaa00;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        color: #0000ff;
+        filter: hue-rotate(360deg);
+    }
+}
+
+.loading-animation-bg > section .loading-animation {
+    position: relative;
+    height: 250px;
+    width: 250px;
+}
+
+/* .loading-animation-bg > section .loading-animation span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+} */
+
+/* .loading-animation-bg > section .loading-animation span::before {
+    content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 7px;
+        width: 7px;
+        background: #f2ff00;
+        border-radius: 35%;
+        box-shadow: 0 0 10px #1aff00,
+                    0 0 20px #1aff00,
+                    0 0 40px #1aff00,
+                    0 0 60px #1aff00,
+                    0 0 80px #1aff00,
+                    0 0 100px #1aff00;
+        animation: animateLoading 2s linear infinite;
+        animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes animateLoading {
+    0% {
+        transform: scale(1);
+    }
+    80%, 100% {
+        transform: scale(0);
+    }
+} */
+
+/* main content design here ... */
+.main-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* opacity: 0; */
+
+    /* animation: mainContainerAppear 9s linear 9s 1 forwards; */
+}
+/* @keyframes mainContainerAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+.border-right-width {
+    border-right-width: 1px;
+}
+
+.aside-links {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    padding-left: 10px;
+}
+
+.aside-links > a {
+    transition: transform 1s;
+}
+
+.aside-links > a:hover {
+    transform: translateX(0vw) scale(1.2) translateZ(0vw);
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px #172554,
+                0 0 20px #172554;
+}
+.lg\:flex-row {
+    flex-direction: row;
+}
+
+.top-menu{
+    margin: auto;
+    max-width: 1250px;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.top-menu, .top-menu-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-menu-info {
+    /* max-width: 1250px; */
+    /* width: 100%; */
+    gap: 28px;
+}
+
+svg {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+.top-menu ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.square-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.square-bg li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    height: 80px;
+    width: 80px;
+    /* background-color: #797fc21a; */
+    bottom: -320px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    animation: squareAnimate 35s linear infinite;
+}
+/* html svg */
+.square-bg li:nth-child(1) {
+    left: 20%;
+    animation-delay: 2.5s;
+    animation-duration: 24s;
+}
+/* css svg */
+.square-bg li:nth-child(2) {
+    left: 30%;
+    animation-delay: 4.5s;
+    animation-duration: 24s;
+}
+/* js svg */
+.square-bg li:nth-child(3) {
+    left: 50%;
+    animation-delay: 6.5s;
+    animation-duration: 24s;
+}
+/* react svg */
+.square-bg li:nth-child(4) {
+    left: 60%;
+    animation-delay: 8.5s;
+    animation-duration: 24s;   
+}
+/* nextjs svg */
+.square-bg li:nth-child(5) {
+    left: 15%;
+    animation-delay: 10.5s;
+    animation-duration: 24s;
+}
+/* TailwindCSS svg */
+.square-bg li:nth-child(6) {
+    left: 55%;
+    animation-delay: 12.5s;
+    animation-duration: 24s;
+}
+/* database svg */
+.square-bg li:nth-child(7) {
+    left: 25%;
+    animation-delay: 14.5s;
+    animation-duration: 24s;
+}
+/* git svg */
+.square-bg li:nth-child(8) {
+    left: 55%;
+    animation-delay: 16.5s;
+    animation-duration: 24s;
+}
+
+@keyframes squareAnimate {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1500px) rotate(600deg);
+    }
+}
+
+.title-section {
+    padding: 0.75rem 1.25rem;
+    font-size: .9rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+.footer-menu-container{
+    padding: 2.5rem 5px;
+    /* margin-right: 6px; */
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
