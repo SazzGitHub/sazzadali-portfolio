@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
+    <link rel="shortcut icon" href="/assets/logo/my-letter-favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,105 +43,103 @@
         </section>
     </div> -->
     <!-- MAIN BODY SECTION HERE -->
-    <div class=" main-container flex flex-col bg-blue-100">
+    <div class=" main-container">
         <!-- FIXED aside menu bar items here -->
-        <div class="aside-links">
-            <a href="/#home" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>HOME</p>
-            </a>
-            <a href="/#about" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>ABOUT ME</p>
-            </a>
-            <a href="/#skills" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>MY SKILLS</p>
-            </a>
-            <a href="/#projects" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>PROJECTS</p>
-            </a>
-            <a href="/#contact" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>CONTACT</p>
-            </a>
+        <div id="aside-links" class="aside-links flex items-center flex-col z-10">
+        <a href="/#home" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>HOME</p>
+        </a>
+        <a href="/#about" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>ABOUT ME</p>
+        </a>
+        <a href="/#skills" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>MY SKILLS</p>
+        </a>
+        <a href="/#projects" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>PROJECTS</p>
+        </a>
+        <a href="/#contact" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>CONTACT</p>
+        </a>
         </div>
-        <!-- TOP first section here -->
-        <div class=" px-[40px] bg-blue-100 py-4 z-10 max-xs:px[20px] ">
-            <div class="mobile-top-menu">
-                <div class="flex justify-between items-center w-full md:hidden">
-                    <!-- put above md:hidden -->
-                    <div class="flex gap-10 w-full">
-                        <a href="/" class="processed-link">
-                            <h1 class="text-2xl text-blue-950">Sazzad Ali</h1>
+
+            <!-- TOP first section here -->
+            <div class=" px-[40px] bg-blue-100 py-4 z-50 max-xs:px[20px] ">
+                <div class="flex flex-row items-center gap-10 ">
+                    <a href="/" class="processed-link">
+                        <img width="50" height="50" src="/assets/logo/my-letter-favicon.svg" alt="">
+                    </a>
+                    <h1 class="text-3xl font-bold text-blue-950">Sazzad Ali</h1>
+                </div>
+                <div class="mobile-top-menu ">
+                    <!-- here close and open menu button for small screens -->
+                    <div class="flex justify-between items-center w-full md:hidden">
+                        <!-- put above md:hidden -->
+                        <div class="text-2xl z-50">
+                            <!-- this is cross button -->
+                            <button id="cross-btn" class="cross-btn hidden">
+                                <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-2 bg-blue-950 rounded-full text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(191 219 254)" height="1em" width="1em">
+                                        <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+                                    </svg> 
+                                </div>                                       
+                            </button>
+                            <!-- this is a humburger button -->
+                            <button id="hamburger-btn" class="hamburger-btn">
+                                <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-2 bg-blue-950 rounded-full text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(191,219,254,9)"  height="1em" width="1em">
+                                        <path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>         
+                    <!-- menu for a mobile view -->
+                    <div id="small-hidden" class="small-hide hidden fixed text-blue-100">
+                        <a href="/#home" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                            <p>HOME</p>
                         </a>
+                        <a href="/#about" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                            <p>ABOUT ME</p>
+                        </a>
+                        <a href="/#skills" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                            <p>MY SKILLS</p>
+                        </a>
+                        <a href="/#projects" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                            <p>PROJECTS</p>
+                        </a>
+                        <a href="/#contact" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                            <p>CONTACT</p>
+                        </a>
+                    </div>  
+                </div>
+                <div class="top-menu-info flex max-md:flex-col max-md:gap-7">
+                    <div class="flex md:gap-10 flex-col ">
+                        <div class="flex gap-1 items-center text-md font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(23,37,84,1)" height="2em" width="2em"><path d="M2 5.5V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5ZM0 10H5V12H0V10ZM0 15H8V17H0V15Z"></path></svg>
+                            <a href="mailto:find.sazzadali@gmail.com" class="text-blue-950 "><span>find.sazzadali@gmail.com</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="text-2xl z-50">
-                        <!-- this is cross button -->
-                        <button id="cross-btn" class="cross-btn hidden">
-                            <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-1 bg-blue-950 rounded-full text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(191 219 254)" height="1em" width="1em">
-                                    <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
-                                </svg> 
-                            </div>                                       
-                        </button>
-                        <!-- this is a humburger button -->
-                        <button id="hamburger-btn" class="hamburger-btn">
-                            <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-1 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(191,219,254,1)"  height="1em" width="1em">
-                                    <path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
-                                </svg>
-                            </div>
-                        </button>
-                    </div>
-                </div>           
-                <!-- menu for a mobile view -->
-                <div id="small-hidden" class="small-hidden hidden">
-                    <a href="/#home" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                        <p>HOME</p>
-                    </a>
-                    <a href="/#about" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                        <p>ABOUT ME</p>
-                    </a>
-                    <a href="/#skills" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                        <p>MY SKILLS</p>
-                    </a>
-                    <a href="/#projects" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                        <p>PROJECTS</p>
-                    </a>
-                    <a href="/#contact" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                        <p>CONTACT</p>
-                    </a>
+                    <span class="flex gap-5 ">
+                        <a href="/assets/my-cv/Sazzad ALI_CV.pdf" target="_blank" class="bg-blue-950 text-white px-4 py-1 rounded-md hover:bg-blue-800 text-center flex gap-2 processed-link " download>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(147,197,253,1)" height="20px" width= "20px"><path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM14 9H19L12 16L5 9H10V3H14V9Z"></path></svg>
+                            Download CV
+                        </a>
+                    </span>
                 </div>
             </div>
-                <div class="top-menu-info">
-                        <div class="flex md:gap-10 flex-col ">
-                            <div class="flex gap-1 items-center text-sm font-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(23,37,84,1)" height="2em" width="2em">
-                                    <path d="M2 5.5V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5ZM0 10H5V12H0V10ZM0 15H8V17H0V15Z"></path>
-                                </svg>
-                                <a href="mailto:find.sazzadali@gmail.com" class="text-blue-950 "><span>find.sazzadali@gmail.com</span>
-                                </a>
-                            </div>
-                        </div>
-                        <span class="flex gap-5 ">
-                            <a href="/assets/my-cv/Sazzad ALI_CV.pdf" target="_blank" class="bg-blue-950 text-white px-4 py-1 rounded-md hover:bg-blue-800 text-center flex gap-2 processed-link " download>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(147,197,253,1)" height="20px" width="20px">
-                                    <path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM14 9H19L12 16L5 9H10V3H14V9Z"></path>
-                                </svg>
-                                Download CV
-                            </a>
-                        </span>
-                </div>
-        </div>
-    </div>
 
-        <!-- REST section here -->
-        <section class=" pl-[350px] max-lg:pl-[170px] w-full min-h-screen max-md:pl-5" id="home">
-
-            <!-- HERO SECTION HERE -->
-            <div class="flex flex-col bg-blue-100">
-                <!-- intro animated section -->
-                <section class="w-full h-full bg-blue-100 relative pr-[70px] py-10 max-xs:px-[20px]">
-                    <div class="flex items-center justify-between h-full max-w-[1500px] max-md:flex-col max-md:gap-10">
+            <!-- REST section here -->
+            <section class=" pl-[350px] max-lg:pl-[170px] w-full min-h-screen max-md:pl-5" id="home">
+            
+                <!-- HERO SECTION HERE -->
+                <div class="flex flex-col bg-blue-100">
+                    <!-- intro animated section -->
+                    <section class="w-full h-full bg-blue-100 relative pr-[70px] pt-36 max-xs:px-[20px] overflow-hidden">
+                        <div class="flex items-center justify-between h-full max-w-[1500px] max-md:flex-col max-md:gap-10">
                         <div class="flex flex-col gap-5 z-40 max-md:order-2 ">
-                            <div class="text-5xl flex flex-col gap-4 lg:text-6xl ">
+                            <div class="text-5xl flex flex-col gap-4 lg:text-6xl max-md:text-4xl">
                                 <h1>
                                     Hi, I'm Sazzad
                                 </h1>
@@ -154,7 +153,7 @@
                                 <h2>from Sydney, Australia</h2>
                                 <p class="mt-5 text-xl ">"One Line of Code at a Time"</p>
                             </div>
-                            <!-- Projects and Let's Talk button here -->
+                            <!-- 'Projects' and 'Let's Talk' button here -->
                             <div class="flex gap-4 max-md:justify-center ">
                                 <a href="#contact">
                                     <button class="bg-blue-900 text-white px-2 lg:px-4 py-1 rounded-md hover:bg-blue-950 cursor-pointer ">Let's Talk</button>
@@ -168,8 +167,8 @@
                         <div>
                             <img width="300" height="300" src="/assets/images/hero-image.svg" alt="Sazzad ALI" class="z-10 border-solid border-4 border-blue-200 shadow-lg">
                         </div>
-                    </div>                    
-                    <ul class="square-bg">
+                        </div>                    
+                        <ul class="square-bg">
                         <li>
                             <!-- html svg -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="120" height="120" fill="rgba(121,127,194,0.29)"><path d="M12 18.1778L16.6192 16.9222L17.2434 10.1444H9.02648L8.82219 7.88889H17.4477L17.6747 5.67778H6.32535L6.96091 12.3556H14.7806L14.5195 15.2222L12 15.8889L9.48045 15.2222L9.32156 13.3778H7.0517L7.38083 16.9222L12 18.1778ZM3 2H21L19.377 20L12 22L4.62295 20L3 2Z"></path></svg>
@@ -202,122 +201,122 @@
                             <!-- git svg -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="120" height="120" fill="rgba(121,127,194,0.29)"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg>
                         </li>
-                    </ul>
+                        </ul>
+                    </section>
+                </div>
+            
+                <!-- ABOUT ME SECTION  HERE -->
+                <section class=" relative pr-[50px] py-10 max-xs:px-[20px] bg-blue-100 z-40 mt-20" id="about">
+                <div class="max-w-[1570px] ">
+                    <div class="inline-block ">
+                        <p class="title-section bg-blue-950 text-white uppercase ">
+                            About me
+                        </p>
+                    </div>
+                    <div class="mt-15">
+                        <div class="mt-10 text-blue-950 text-[20px] leading-10 text-justify ">
+                            As a passionate IT enthusiast deeply involved in software engineering, design, and programming, I am an innovative and  outcome-oriented Web Developer dedicated to creating engaging digital environments. Equipped with a Bachelor's degree in     Information Technology and intensive training from a reputable Coding Bootcamp, I bring extensive expertise in both      front-end and back-end development. <span class="font-medium ">Proficient in a range of technologies including React,     NextJs, HTML, CSS, JS, TailwindCSS, and more.</span> I excel in dynamic settings that blend creativity with technical      precision. Known for my quick-learning mindset and meticulous attention to detail, I have a proven ability to translate       intricate concepts into user-friendly solutions. <span class="font-medium ">My collaborative approach, adept       problem-solving skills, and commitment to staying abreast of industry trends position me as a valuable asset to any     development team.</span> I am prepared to leverage my skills and background to drive innovation and surpass expectations      in roles such as Full-Stack Developer, Software Engineer, or Web Designer.
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <div class="w-full">
+                        <ul class="flex justify-between flex-col gap-5 md:flex-row">
+                            <li class="w-full shadow-sm ">
+                                <div class="w-full text-center py-[28px] md:py-[60px] rounded-lg bg-blue-300">
+                                    <h3 class="text-[40px] mb-[3px] text-blue-950 font-bold">3+</h3>
+                                    <span class="uppercase font-medium">Projects</span>
+                                </div>
+                            </li>
+                            <li class="w-full shadow-sm ">
+                                <div class="w-full text-center py-[28px] md:py-[60px] rounded-lg bg-blue-300">
+                                    <h3 class="text-[40px] mb-[3px] text-blue-950 font-bold">Graduate</h3>
+                                    <span class="uppercase font-medium">Information Technology</span>
+                                </div>
+                            </li>
+                            <li class="w-full shadow-sm ">
+                                <div class="w-full text-center py-[28px] md:py-[60px] rounded-lg  bg-blue-300">
+                                    <h3 class="text-[40px] mb-[3px] text-blue-950 font-bold">Coding</h3>
+                                    <span class="uppercase font-medium">Bootcamp - Skillup Labs</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 </section>
-            </div>
-
-            <!-- ABOUT ME SECTION  HERE -->
-            <section class=" relative pr-[50px] py-10 max-xs:px-[20px] bg-blue-100 z-40 mt-20" id="about">
-            <div class="max-w-[1570px] ">
-                <div class="inline-block ">
-                    <p class="title-section bg-blue-950 text-white uppercase ">
-                        About me
-                    </p>
-                </div>
-                <div class="mt-15">
-                    <div class="mt-10 text-blue-950 text-[20px] leading-10 text-justify ">
-                        As a passionate IT enthusiast deeply involved in software engineering, design, and programming, I am an innovative and outcome-oriented Web Developer dedicated to creating engaging digital environments. Equipped with a Bachelor's degree in Information Technology and intensive training from a reputable Coding Bootcamp, I bring extensive expertise in both front-end and back-end development. <span class="font-medium ">Proficient in a range of technologies including React, NextJs, HTML, CSS, JS, TailwindCSS, and more.</span> I excel in dynamic settings that blend creativity with technical precision. Known for my quick-learning mindset and meticulous attention to detail, I have a proven ability to translate intricate concepts into user-friendly solutions. <span class="font-medium ">My collaborative approach, adept problem-solving skills, and commitment to staying abreast of industry trends position me as a valuable asset to any development team.</span> I am prepared to leverage my skills and background to drive innovation and surpass expectations in roles such as Full-Stack Developer, Software Engineer, or Web Designer.
+            
+                <!-- ABOUT ME SECTION  HERE -->
+                <section class=" relative pr-[50px] py-10 max-xs:px-[20px] bg-blue-100 z-40 mt-20" id="about">
+                <div class="max-w-[1570px] ">
+                    <div class="inline-block ">
+                        <p class=" title-section bg-blue-950 text-white uppercase ">
+                            My Skills
+                        </p>
                     </div>
-                </div>
-            </div>
-            <div class="mt-10">
-                <div class="w-full">
-                    <ul class="flex justify-between flex-col gap-5 md:flex-row">
-                        <li class="w-full shadow-sm ">
-                            <div class="w-full text-center py-[28px] md:py-[60px] rounded-lg bg-blue-300">
-                                <h3 class="text-[40px] mb-[3px] text-blue-950 font-bold">3+</h3>
-                                <span class="uppercase font-medium">Projects</span>
-                            </div>
-                        </li>
-                        <li class="w-full shadow-sm ">
-                            <div class="w-full text-center py-[28px] md:py-[60px] rounded-lg bg-blue-300">
-                                <h3 class="text-[40px] mb-[3px] text-blue-950 font-bold">Graduate</h3>
-                                <span class="uppercase font-medium">Information Technology</span>
-                            </div>
-                        </li>
-                        <li class="w-full shadow-sm ">
-                            <div class="w-full text-center py-[28px] md:py-[60px] rounded-lg  bg-blue-300">
-                                <h3 class="text-[40px] mb-[3px] text-blue-950 font-bold">Coding</h3>
-                                <span class="uppercase font-medium">Bootcamp - Skillup Labs</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            </section>
-
-            <!-- ABOUT ME SECTION  HERE -->
-            <section class=" relative pr-[50px] py-10 max-xs:px-[20px] bg-blue-100 z-40 mt-20" id="about">
-            <div class="max-w-[1570px] ">
-                <div class="inline-block ">
-                    <p class=" title-section bg-blue-950 text-white uppercase ">
-                        My Skills
-                    </p>
-                </div>
-                <h3 class="text-2xl mt-5">Programming and Computer Skills</h3>
-                <div class="grid md:grid-cols-5 gap-5 sm:grid-cols-4 grid-cols-2 mt-10 ">
-                    <div class="p-4 shadow-lg rounded-lg text-center flex flex-col items-center hover:animate-easein hover:bg-blue-400">
-                        <img width="80" height="80" src="/assets/images/html5-fill.png" alt="">
-                        <span class="font-bold">HTML5</span>
+                    <h3 class="text-2xl mt-5">Programming and Computer Skills</h3>
+                    <div class="grid md:grid-cols-5 gap-5 sm:grid-cols-4 grid-cols-2 mt-10 ">
+                        <div class="p-4 shadow-lg rounded-lg text-center flex flex-col items-center hover:animate-easein hover:bg-blue-400">
+                            <img width="80" height="80" src="/assets/images/html5-fill.png" alt="">
+                            <span class="font-bold">HTML5</span>
+                        </div>
                     </div>
-                </div>
-            </section>
-
-
-
-
-
-
-
-            <!-- FOOTER SECTION  HERE -->
-            <section class="footer-menu-container bg-blue-200 pr-[40px] py-1 pb-5" style="opacity: 1; transform: translateY(0vh) translateZ(0px);">
-            <div class="footer-menu w-full items-center max-md:gap-10 max-md:flex-col">
-                <!-- aside hero image here -->
-                <div class="flex items-center flex-col justify-center gap-5 rounded-full">
-                    <a href="#home">
-                        <img width="100" height="100" src="/assets/images/my-image.jpg" alt="sazzad-image" class="border-solid border-4 border-gray-300 rounded-full">
-                    </a>
-                    <p style="font-weight: 700;">Sazzad ALI</p>
-                </div>
-                <!-- social links and copyright info here -->
-                <div class="flex items-center flex-col gap-7 justify-center text-center social-links">
-                    <!-- Contact Information here -->
-                    <div class="flex flex-col content-start">
-                        <p class="text-blue-900 font-semibold text-xl">
-                            "Excited to work on a project together."
+                </section>
+            
+            
+            
+            
+            
+            
+            
+                <!-- FOOTER SECTION  HERE -->
+                <section class="footer-menu-container bg-blue-200 pr-[40px] py-1 pb-5" style="opacity: 1; transform: translateY(0vh) translateZ(0px);   ">
+                <div class="footer-menu w-full items-center max-md:gap-10 max-md:flex-col">
+                    <!-- aside hero image here -->
+                    <div class="flex items-center flex-col justify-center gap-5 rounded-full">
+                        <a href="#home">
+                            <img width="100" height="100" src="/assets/images/my-image.jpg" alt="sazzad-image" class="border-solid border-4     border-gray-300 rounded-full">
+                        </a>
+                        <p style="font-weight: 700;">Sazzad ALI</p>
+                    </div>
+                    <!-- social links and copyright info here -->
+                    <div class="flex items-center flex-col gap-7 justify-center text-center social-links">
+                        <!-- Contact Information here -->
+                        <div class="flex flex-col content-start">
+                            <p class="text-blue-900 font-semibold text-xl">
+                                "Excited to work on a project together."
+                                <br>
+                                Feel free to contact me.
+                            </p>
                             <br>
-                            Feel free to contact me.
-                        </p>
-                        <br>
-                        <h3>Email me on:</h3>
-                        <p class="text-blue-950 font-semibold">
-                            <a href="mailto:find.sazzadali@gmail.com">
-                                <span class="font-bold">find.sazzadali@gmail.com </span>
+                            <h3>Email me on:</h3>
+                            <p class="text-blue-950 font-semibold">
+                                <a href="mailto:find.sazzadali@gmail.com">
+                                    <span class="font-bold">find.sazzadali@gmail.com </span>
+                                </a>
+                            </p>
+                        </div>
+                        <h3>Get in touch on</h3>
+                        <div class="flex flex-row lg:flex-row items-center gap-5 mb-3 social-links-img">
+                            <a href="/" target="_blank">
+                                <img height="25" width="25" src="/assets/images/linkedin-box-fill.svg" alt="LinkedIn-Sazzad">
                             </a>
+                            <a href="/" target="_blank">
+                                <img height="25" width="25" src="/assets/images/github-fill.svg" alt="SazzGitHub">
+                            </a>
+                            <a href="/" target="_blank">
+                                <img height="25" width="25" src="/assets/images/tiktok-fill.svg" alt="@developer.sazzad">
+                            </a>
+                        </div>
+                        <p class="max-md" id="contact">
+                            Copyright 2024&copy; Sazzad ALI.
+                            All rights reserved
                         </p>
                     </div>
-                    <h3>Get in touch on</h3>
-                    <div class="flex flex-row lg:flex-row items-center gap-5 mb-3 social-links-img">
-                        <a href="/" target="_blank">
-                            <img height="25" width="25" src="/assets/images/linkedin-box-fill.svg" alt="LinkedIn-Sazzad">
-                        </a>
-                        <a href="/" target="_blank">
-                            <img height="25" width="25" src="/assets/images/github-fill.svg" alt="SazzGitHub">
-                        </a>
-                        <a href="/" target="_blank">
-                            <img height="25" width="25" src="/assets/images/tiktok-fill.svg" alt="@developer.sazzad">
-                        </a>
-                    </div>
-                    <p class="max-md" id="contact">
-                        Copyright 2024&copy; Sazzad ALI.
-                        All rights reserved
-                    </p>
                 </div>
-            </div>
+                </section> 
             </section> 
-        </section> 
+        </div>
     </div>
-
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
