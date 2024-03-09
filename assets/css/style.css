@@ -145,17 +145,54 @@ html, body {
     box-shadow: 0 0 10px #172554,
                 0 0 20px #172554;
 }
+
+.mobile-top-menu {
+    padding-bottom: 15px;  
+}
+
+.small-hidden {
+    display: none;
+}
+
+.small-hidden a {
+    font-size: 16px;
+}
+
+.small-hidden > a:hover {
+    transform: translateX(0vw) scale(1.2) translateZ(0vw);
+    border: 1px solid transparent;
+    opacity: .9;
+}
+
+
+
+@media screen and (max-width:770px) {
+    .aside-links {
+        display: none;
+    }
+    .small-hidden {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+}
+
+
+
+
 .lg\:flex-row {
     flex-direction: row;
 }
 
-.top-menu{
+.mobile-top-menu{
     margin: auto;
     max-width: 1250px;
     flex-direction: column;
     gap: 1.25rem;
 }
-.top-menu, .top-menu-info {
+.mobile-top-menu, .top-menu-info {
     display: flex;
     align-items: center;
     justify-content: space-between;

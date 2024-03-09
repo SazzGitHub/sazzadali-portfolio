@@ -17,3 +17,23 @@ Typewriter
     .typeString('a UI Designer')
     .pauseFor(350)
     .start();
+
+
+    (() => {
+
+        function openMenu() {
+            document.getElementById("small-hidden").classList.remove("hidden");
+            document.getElementById("hamburger-btn").classList.add("hidden");
+            document.getElementById("cross-btn").classList.remove("hidden");
+        }
+
+        function closeMenu() {
+            document.getElementById("small-hidden").classList.add("hidden");
+            document.getElementById("hamburger-btn").classList.remove("hidden");
+            document.getElementById("cross-btn").classList.add("hidden");
+
+        }
+        
+        document.getElementById("hamburger-btn").addEventListener("click", openMenu);
+        document.getElementById("cross-btn").addEventListener("click", closeMenu);
+    })();

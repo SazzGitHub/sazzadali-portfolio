@@ -63,49 +63,73 @@
         </div>
         <!-- TOP first section here -->
         <div class=" px-[40px] bg-blue-100 py-4 z-10 max-xs:px[20px] ">
-                <div class="top-menu">
-                    <div class="flex justify-between items-center w-full md:hidden">
-                        <!-- put above md:hidden -->
-                        <div>
-                            <div class="flex gap-10 w-full">
-                                <a href="/" class="processed-link">
-                                    <h1 class="text-2xl text-blue-950">Sazzad Ali</h1>
-                                </a>
-                            </div>
-                            <div class="text-2xl z-50">
-                                <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-1 bg-blue-950 rounded-full text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(191 219 254)" height="1em" width="1em">
-                                        <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
-                                    </svg>
-                                </div>
-                                <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-1 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(191,219,254,1)"  height="1em" width="1em">
-                                        <path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
+            <div class="mobile-top-menu">
+                <div class="flex justify-between items-center w-full md:hidden">
+                    <!-- put above md:hidden -->
+                    <div class="flex gap-10 w-full">
+                        <a href="/" class="processed-link">
+                            <h1 class="text-2xl text-blue-950">Sazzad Ali</h1>
+                        </a>
                     </div>
-                    <div class="top-menu-info">
-                        <div class="flex md:gap-10 flex-col md:flex-row">
+                    <div class="text-2xl z-50">
+                        <!-- this is cross button -->
+                        <button id="cross-btn" class="cross-btn hidden">
+                            <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-1 bg-blue-950 rounded-full text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(191 219 254)" height="1em" width="1em">
+                                    <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+                                </svg> 
+                            </div>                                       
+                        </button>
+                        <!-- this is a humburger button -->
+                        <button id="hamburger-btn" class="hamburger-btn">
+                            <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-1 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(191,219,254,1)"  height="1em" width="1em">
+                                    <path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>           
+                <!-- menu for a mobile view -->
+                <div id="small-hidden" class="small-hidden hidden">
+                    <a href="/#home" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                        <p>HOME</p>
+                    </a>
+                    <a href="/#about" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                        <p>ABOUT ME</p>
+                    </a>
+                    <a href="/#skills" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                        <p>MY SKILLS</p>
+                    </a>
+                    <a href="/#projects" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                        <p>PROJECTS</p>
+                    </a>
+                    <a href="/#contact" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                        <p>CONTACT</p>
+                    </a>
+                </div>
+            </div>
+                <div class="top-menu-info">
+                        <div class="flex md:gap-10 flex-col ">
                             <div class="flex gap-1 items-center text-sm font-bold">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(23,37,84,1)" height="2em" width="2em">
                                     <path d="M2 5.5V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5ZM0 10H5V12H0V10ZM0 15H8V17H0V15Z"></path>
                                 </svg>
-                                <a href="mailto:find.sazzadali@gmail.com" class="text-blue-950 " >find.sazzadali@gmail.com</span>
+                                <a href="mailto:find.sazzadali@gmail.com" class="text-blue-950 "><span>find.sazzadali@gmail.com</span>
+                                </a>
                             </div>
                         </div>
-                        <span class="flex gap-5">
-                            <a href="/assets/my-cv/Sazzad ALI_CV.pdf" target="_blank" class="bg-blue-950 text-white px-4 py-1 rounded-md hover:bg-blue-800 flex gap-2 processed-link " download>
+                        <span class="flex gap-5 ">
+                            <a href="/assets/my-cv/Sazzad ALI_CV.pdf" target="_blank" class="bg-blue-950 text-white px-4 py-1 rounded-md hover:bg-blue-800 text-center flex gap-2 processed-link " download>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(147,197,253,1)" height="20px" width="20px">
                                     <path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM14 9H19L12 16L5 9H10V3H14V9Z"></path>
                                 </svg>
                                 Download CV
                             </a>
                         </span>
-                    </div>
                 </div>
         </div>
+    </div>
 
         <!-- REST section here -->
         <section class=" pl-[350px] max-lg:pl-[170px] w-full min-h-screen max-md:pl-5" id="home">
@@ -183,7 +207,7 @@
             </div>
 
             <!-- ABOUT ME SECTION  HERE -->
-            <section class=" relative pr-[50px] py-10 max-xs:px-[20px] bg-blue-100 z-50 mt-20" id="about">
+            <section class=" relative pr-[50px] py-10 max-xs:px-[20px] bg-blue-100 z-40 mt-20" id="about">
             <div class="max-w-[1570px] ">
                 <div class="inline-block ">
                     <p class="title-section bg-blue-950 text-white uppercase ">
@@ -213,8 +237,8 @@
                         </li>
                         <li class="w-full shadow-sm ">
                             <div class="w-full text-center py-[28px] md:py-[60px] rounded-lg  bg-blue-300">
-                                <h3 class="text-[40px] mb-[3px] text-blue-950 font-bold">Fast</h3>
-                                <span class="uppercase font-medium">Learning Mentality</span>
+                                <h3 class="text-[40px] mb-[3px] text-blue-950 font-bold">Coding</h3>
+                                <span class="uppercase font-medium">Bootcamp - Skillup Labs</span>
                             </div>
                         </li>
                     </ul>
@@ -223,7 +247,7 @@
             </section>
 
             <!-- ABOUT ME SECTION  HERE -->
-            <section class=" relative pr-[50px] py-10 max-xs:px-[20px] bg-blue-100 z-50 mt-20" id="about">
+            <section class=" relative pr-[50px] py-10 max-xs:px-[20px] bg-blue-100 z-40 mt-20" id="about">
             <div class="max-w-[1570px] ">
                 <div class="inline-block ">
                     <p class=" title-section bg-blue-950 text-white uppercase ">
