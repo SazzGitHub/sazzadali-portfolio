@@ -31,7 +31,6 @@ Typewriter
             document.getElementById("small-hidden").classList.add("hidden");
             document.getElementById("hamburger-btn").classList.remove("hidden");
             document.getElementById("cross-btn").classList.add("hidden");
-
         }
         
         document.getElementById("hamburger-btn").addEventListener("click", openMenu);
