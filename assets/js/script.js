@@ -8,9 +8,9 @@ var Typewriter = new Typewriter(typeEffect, {
 
 Typewriter
     .pauseFor(90)
-    .typeString('a Web Developer')
+    .typeString('a Developer')
     .pauseFor(350)
-    .deleteChars(15)
+    .deleteChars(11)
     .typeString('a Programmer')
     .pauseFor(350)
     .deleteChars(12)
