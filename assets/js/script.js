@@ -41,7 +41,7 @@ Typewriter
 
 gsap.from(".icons-anim > img", {
     scale: 0.92,
-    rotate: 5,
+    rotate: 3,
     duration: 2,
     repeat: -1,
     yoyo: true, 
@@ -49,7 +49,7 @@ gsap.from(".icons-anim > img", {
 
 gsap.to(".icons-anim > img", {
     // scale: 1,
-    rotate: -5,
+    rotate: -3,
     duration: 2,
     repeat: -1,
     yoyo: true,
