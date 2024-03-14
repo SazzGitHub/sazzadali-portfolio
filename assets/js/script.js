@@ -1,4 +1,6 @@
 // Typewriter effect here ...
+
+
 var typeEffect = document.getElementById('Typewriter');
 
 var Typewriter = new Typewriter(typeEffect, {
@@ -36,3 +38,19 @@ Typewriter
         document.getElementById("hamburger-btn").addEventListener("click", openMenu);
         document.getElementById("cross-btn").addEventListener("click", closeMenu);
     })();
+
+gsap.from(".icons-anim > img", {
+    // scale: 0.5,
+    rotate: 15,
+    duration: 2,
+    repeat: -1,
+    yoyo: true, 
+});
+
+gsap.to(".icons-anim > img", {
+    // scale: 1,
+    rotate: -10,
+    duration: 2,
+    repeat: -1,
+    yoyo: true,
+});
