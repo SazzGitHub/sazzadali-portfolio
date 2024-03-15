@@ -40,7 +40,7 @@ Typewriter
     })();
 
 gsap.from(".icons-anim > img", {
-    scale: 0.92,
+    // scale: 0.92,
     rotate: 3,
     duration: 2,
     repeat: -1,
