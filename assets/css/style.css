@@ -29,7 +29,7 @@ html, body {
 /* animate your bg here */
 /* comment/uncoment below section for editing/animation mode */
 
-@keyframes animateBg {
+/* @keyframes animateBg {
     0% {
         filter: hue-rotate(0deg);
     }
@@ -39,7 +39,7 @@ html, body {
     100% {
         opacity: 0;
     }
-}
+} */
 
 /* until above closed curly brace*/
 
@@ -118,11 +118,11 @@ html, body {
 
 /* comment/uncoment this section for editing/animation mode */
 
-.main-container {
+/* .main-container {
     top: 0;
     opacity: 0;
     position: absolute;
-    animation: mainContainerAppear 8s linear 8s 1 forwards;
+    animation: mainContainerAppear 9s linear 9s 1 forwards;
 }
 @keyframes mainContainerAppear {
     0% {
@@ -131,7 +131,7 @@ html, body {
     100% {
         opacity: 1;
     }
-}
+} */
 
 /* END OF THE ANIMATIONS */
 /* 
