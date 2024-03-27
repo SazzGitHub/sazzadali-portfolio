@@ -21,6 +21,7 @@ Typewriter
     .start();
 
 
+    // mobile menu ...
     (() => {
 
         function openMenu() {
