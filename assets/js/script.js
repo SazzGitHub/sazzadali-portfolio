@@ -42,16 +42,16 @@ Typewriter
 
 gsap.from(".icons-anim > img", {
     // scale: 1.1,
-    // rotate: 3,
-    duration: 1,
+    // rotate: 5,
+    duration: 1.5,
     repeat: -1,
     yoyo: true, 
 });
 
-gsap.to(".icons-anim > img", {
+gsap.to(".icons-anim:hover > img, .sazzad-image", {
     scale: 1.1,
-    // rotate: -3,
-    duration: 1,
+    // rotate: -5,
+    duration: 1.5,
     repeat: -1,
     yoyo: true,
 });
