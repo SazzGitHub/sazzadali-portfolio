@@ -40,17 +40,17 @@ Typewriter
     })();
 
 gsap.from(".icons-anim > img", {
-    scale: 1.1,
-    rotate: 3,
-    duration: 2,
+    // scale: 1.1,
+    // rotate: 3,
+    duration: 1,
     repeat: -1,
     yoyo: true, 
 });
 
 gsap.to(".icons-anim > img", {
-    // scale: 1,
-    rotate: -3,
-    duration: 2,
+    scale: 1.1,
+    // rotate: -3,
+    duration: 1,
     repeat: -1,
     yoyo: true,
 });
