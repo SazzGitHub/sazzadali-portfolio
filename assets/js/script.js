@@ -40,15 +40,15 @@ Typewriter
         document.getElementById("cross-btn").addEventListener("click", closeMenu);
     })();
 
-gsap.from(".icons-anim > img", {
-    // scale: 1.1,
-    // rotate: 5,
-    duration: 1.5,
-    repeat: -1,
-    yoyo: true, 
-});
+// gsap.from(".icons-anim > img", {
+//     // scale: 1.1,
+//     // rotate: 5,
+//     duration: 1.5,
+//     repeat: -1,
+//     yoyo: true, 
+// });
 
-gsap.to(".icons-anim:hover > img, .sazzad-image", {
+gsap.to(".icons-anim > img, .sazzad-image", {
     scale: 1.1,
     // rotate: -5,
     duration: 1.5,

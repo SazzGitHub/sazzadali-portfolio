@@ -15,112 +15,119 @@
 
 </head>
 <body style="background-color: rgb(219 234 254);">
-    
-        <div class="main-container">
-            <!-- MAIN BODY SECTION HERE -->
-            <!-- FIXED aside menu bar items here -->
-                <div id="aside-links" class="aside-links flex items-center flex-col z-10">
-            <a href="/#home" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>HOME</p>
-            </a>
-            <a href="/#about" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>ABOUT ME</p>
-            </a>
-            <a href="/#skills" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>SKILLS</p>
-            </a>
-            <a href="/#projects" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>PROJECTS</p>
-            </a>
-            <a href="/#experience" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>EXPERIENCE</p>
-            </a>
-            <a href="/#contact" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                <p>CONTACT</p>
-            </a>
-                </div>
+    <!-- MAIN BODY SECTION HERE -->
+    <!-- FIXED aside menu bar items here -->
+    <div id="aside-links" class="aside-links flex items-center flex-col z-10">
+        <a href="/#home" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>HOME</p>
+        </a>
+        <a href="/#about" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>ABOUT ME</p>
+        </a>
+        <a href="/#skills" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>SKILLS</p>
+        </a>
+        <a href="/#projects" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>PROJECTS</p>
+        </a>
+        <a href="/#experience" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>EXPERIENCE</p>
+        </a>
+        <a href="/#contact" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+            <p>CONTACT</p>
+        </a>
+    </div>
 
-                <!-- TOP first section here -->
-                <div class=" px-[40px] bg-blue-100 py-4 z-50 max-xs:px[20px] ">
-                    <!-- name / title -->
-                    <div class="flex flex-row items-center gap-10 ">
-                        <a href="#" class="processed-link">
-                            <img width="50" height="50" src="/assets/logo/my-letter-favicon.svg" alt="">
-                        </a>
-                        <h1 class="text-3xl font-bold text-blue-950">Sazzad Ali</h1>
-                    </div>
+    <!-- TOP first section and mobile top menu here -->
+    <div class=" px-[40px] bg-blue-100 py-4 z-50 max-xs:px[20px] ">
+        <!-- name / title -->
+        <div class="flex flex-row items-center gap-10 ">
+            <a href="#" class="processed-link">
+                <img width="50" height="50" src="/assets/logo/my-letter-favicon.svg" alt="">
+            </a>
+            <h1 class="text-3xl font-bold text-blue-950">Sazzad Ali</h1>
+        </div>
 
-                    <!-- mobile top menu nav bar -->
-                    <div class="mobile-top-menu ">
-                        <!-- here close and open menu button for small screens -->
-                        <div class="flex justify-between items-center w-full md:hidden">
-                            <!-- put above md:hidden -->
-                            <div class="text-2xl z-50">
-                                
-                                <!-- this is cross button -->
-                                <button id="cross-btn" class="cross-btn hidden">
-                                    <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-2 bg-blue-950 rounded-full text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(191 219 254)" height="1em" width="1em">
-                                            <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
-                                        </svg> 
-                                    </div>                                       
-                                </button>
+        <!-- mobile top menu nav bar -->
+        <div class="mobile-top-menu ">
 
-                                <!-- this is a humburger button -->
-                                <button id="hamburger-btn" class="hamburger-btn">
-                                    <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-2 bg-blue-950 rounded-full text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(191,219,254,9)"  height="1em" width="1em">
-                                            <path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>         
-                        <!-- menu for a mobile view -->
-                        <div id="small-hidden" class="small-hide hidden fixed text-blue-100">
-                            <a href="/#home" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                                <p>HOME</p>
-                            </a>
-                            <a href="/#about" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                                <p>ABOUT ME</p>
-                            </a>
-                            <a href="/#skills" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                                <p>SKILLS</p>
-                            </a>
-                            <a href="/#experience" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                                <p>PROJECTS</p>
-                            </a>
-                            <a href="/#projects" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                                <p>EXPERIENCE</p>
-                            </a>
-                            <a href="/#contact" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
-                                <p>CONTACT</p>
-                            </a>
-                        </div>  
-                    </div>
+            <!-- here close and open menu button for small screens -->
+            <div class="flex justify-between items-center w-full md:hidden">
+                <!-- put above md:hidden -->
+                <div class="text-2xl z-50">
+                            
+                    <!-- this is cross button -->
+                    <button id="cross-btn" class="cross-btn hidden">
+                        <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-2 bg-blue-950 rounded-full text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(191 219 254)" height="1em" width="1em">
+                                <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+                            </svg> 
+                        </div>                                    
+                    </button>
 
-                    <!-- email and download cv section/divsion here -->
-                    <div class="top-menu-info flex max-md:flex-col max-md:gap-7">
-                        <!-- Email here -->
-                        <div class="flex md:gap-10 flex-col ">
-                            <div class="flex gap-1 items-center text-md font-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(23,37,84,1)" height="2em" width="2em"><path d="M2 5.5V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5ZM0 10H5V12H0V10ZM0 15H8V17H0V15Z"></path></svg>
-                                <a href="mailto:find.sazzadali@gmail.com" class="text-blue-950 "><span>find.sazzadali@gmail.com</span>
-                                </a>
-                            </div>
+                    <!-- this is a humburger button -->
+                    <button id="hamburger-btn" class="hamburger-btn">
+                        <div class="fixed top-[0.7rem] right-[0.8rem] z-50 px-1 py-2 bg-blue-950 rounded-full text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(191,219,254,9)"  height="1em" width="1em">
+                                <path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
+                            </svg>
                         </div>
-                        <!-- download cv section here -->
-                        <span class="flex gap-5 ">
-                            <a href="/assets/my-cv/Sazzad ALI_CV.pdf" target="_blank" class="bg-blue-950 text-white px-4 py-1 rounded-md hover:bg-blue-800 text-center flex gap-2 processed-link " download>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(147,197,253,1)" height="20px" width= "20px"><path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM14 9H19L12 16L5 9H10V3H14V9Z"></path></svg>
-                                Download CV
-                            </a>
-                        </span>
-                    </div>
+                    </button>
                 </div>
+            </div>   
 
-                <!-- HERO, ABOUT, SKILLS, and rest section here -->
-                <section class=" pl-[200px] max-md:pl-[46px] w-full min-h-screen" id="home">
+            <!-- menu for a mobile view -->
+            <div id="small-hidden" class="small-hide hidden fixed text-blue-100">
+                <a href="/#home" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                    <p>HOME</p>
+                </a>
+                <a href="/#about" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                    <p>ABOUT ME</p>
+                </a>
+                <a href="/#skills" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                    <p>SKILLS</p>
+                </a>
+                <a href="/#projects" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                    <p>PROJECTS</p>
+                </a>
+                <a href="/#experience" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                    <p>EXPERIENCE</p>
+                </a>
+                <a href="/#contact" class="relative flex items-center justify-center rounded-lg p-3 font-bold" >
+                    <p>CONTACT</p>
+                </a>
+            </div>  
+        </div>
+
+        <!-- email and download cv section/divsion here -->
+        <div class="top-menu-info flex max-md:flex-col max-md:gap-7">
+            <!-- Email here -->
+            <div class="flex md:gap-10 flex-col ">
+                <div class="flex gap-1 items-center text-md font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(23,37,84,1)" height="2em" width="2em">
+                        <path d="M2 5.5V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5ZM0 10H5V12H0V10ZM0 15H8V17H0V15Z"></path>
+                    </svg>
+                    <a href="mailto:find.sazzadali@gmail.com" class="text-blue-950 ">
+                        <span>
+                            find.sazzadali@gmail.com
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- download cv section here -->
+            <span class="flex gap-5 ">
+                <a href="/assets/my-cv/Sazzad ALI_CV.pdf" target="_blank" class="bg-blue-950 text-white px-4 py-1 rounded-md hover:bg-blue-800 text-center flex gap-2 processed-link " download>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(147,197,253,1)" height="20px" width= "20px">
+                        <path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM14 9H19L12 16L5 9H10V3H14V9Z"></path>
+                    </svg>Download CV
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <!-- HERO, ABOUT, SKILLS, and rest section here -->
+    <section class=" pl-[200px] max-md:pl-[46px] w-full min-h-screen" id="home">
                 
                     <!-- HERO SECTION HERE -->
                     <div class="flex flex-col bg-blue-100">
@@ -416,7 +423,7 @@
                                     <div class="mt-10 flex flex-wrap gap-2">
                                         <span class="bg-blue-500 text-blue-100 px-2 py-1 rounded-lg text-sm font-bold ">HTML5</span>
                                         <span class="bg-blue-500 text-blue-100 px-2 py-1 rounded-lg text-sm font-bold ">CSS3</span>
-                                        <span class="bg-blue-500 text-blue-100 px-2 py-1 rounded-lg text-sm font-bold ">JavaScript</span>
+                                        <span class="bg-blue-500 text-blue-100 px-2 py-1 rounded-lg text-sm font-bold ">NextJs</span>
                                         <span class="bg-blue-500 text-blue-100 px-2 py-1 rounded-lg text-sm font-bold ">Tailwind CSS</span>
                                         <span class="bg-blue-500 text-blue-100 px-2 py-1 rounded-lg text-sm font-bold ">GSAP Animation</span>
                                     </div>
@@ -536,62 +543,64 @@
                         </div>
                     </section>
                     
-                </section> 
+    </section> 
 
 
-                <!-- FOOTER SECTION  HERE -->
-                <section class="footer-menu-container bg-blue-200 pb-5 px-[120px] max-lg:px-[120px]" style="opacity: 1; transform: translateY(0vh) translateZ(0px);   ">
-                <div class="footer-menu w-full items-center max-md:gap-10 max-md:flex-col-reverse">
+    <!-- FOOTER SECTION  HERE -->
+    <section class="footer-menu-container bg-blue-200 pb-5 px-[120px] max-lg:px-[120px]" style="opacity: 1; transform: translateY(0vh) translateZ(0px);   ">
+        <div class="footer-menu w-full items-center max-md:gap-10 max-md:flex-col-reverse">
                     
-                    <!-- footer image, Name and copyright here -->
-                    <div class="flex items-center flex-col justify-center gap-5 rounded-full">
-                        <a href="#home">
-                            <img width="200" height="200" src="/assets/logo/my-image-favicon.svg" alt="sazzad-image" class="sazzad-image border-solid border-2     border-blue-300 rounded-full">
-                        </a>
-                        <p class="flex text-center text-sky-800 text-xl mb-4 font-medium" id="contact">
-                            Sazzad ALI<br>
-                            &copy;2024 <br>
-                            All rights reserved
-                        </p>
-                    </div>
+            <!-- footer image, Name and copyright here -->
+            <div class="flex items-center flex-col justify-center gap-5 rounded-full">
+                <a href="#home">
+                    <img width="200" height="200" src="/assets/logo/my-image-favicon.svg" alt="sazzad-image" class="sazzad-image border-solid border-2     border-blue-300 rounded-full">
+                </a>
+                <p class="flex text-center text-sky-800 text-xl mb-4 font-medium" id="contact">
+                    Sazzad ALI<br>
+                    &copy;2024 <br>
+                    All rights reserved
+                </p>
+            </div>
 
-                    <!-- social links info here -->
-                    <div class="flex items-center flex-col gap-5 justify-center text-center social-links">
-                        <!-- Contact Information here -->
-                        <div class="flex flex-col lg:flex-col content-start">
-                            <h2 class="text-blue-900 font-bold text-xl lg:text-2xl">
-                                <br>Any Job offer or Projects to discuss?<br>
-                            </h2>
-                            <h2 class="text-blue-900 font-semibold text-xl mt-4 mb-4">
-                                Contact me on
-                            </h2>
-                            <p class="text-blue-950 font-semibold text-md">
-                                <a href="mailto:find.sazzadali@gmail.com">
-                                    <span class="font-bold">find.sazzadali@gmail.com </span>
-                                </a>
-                            </p>
-                        </div>
-                        <h3 class="text-blue-900 font-semibold text-xl">
-                            OR
-                        </h3>
-                        <div class="flex flex-row lg:flex-row items-center gap-5 mb-3 social-links-img">
-                            <a href="https://www.linkedin.com/in/sazzadali/" target="_blank">
-                                <img height="35" width="35" src="/assets/images/linkedin-box-fill.svg" alt="LinkedIn-Sazzad">
-                            </a>
-                            <a href="https://github.com/SazzGitHub" target="_blank">
-                                <img height="35" width="35" src="/assets/images/github-fill.svg" alt="SazzGitHub">
-                            </a>
-                            <a href="https://www.tiktok.com/@developer.sazzad" target="_blank">
-                                <img height="35" width="35" src="/assets/images/tiktok-fill.svg" alt="@developer.sazzad">
-                            </a>
-                            <a href="https://www.linkedin.com/company/craftcodestudio" target="_blank">
-                                <img height="35" width="35" src="/assets/images/briefcase-fill.svg" alt="CraftCode STUDIO">
-                            </a>
-                        </div>
-                    </div>
+            <!-- social links and Contact info here -->
+            <div class="flex items-center flex-col gap-5 justify-center text-center social-links">
+                <!-- Contact Information here -->
+                <div class="flex flex-col lg:flex-col content-start">
+                    <h2 class="text-blue-900 font-bold text-xl lg:text-2xl">
+                        <br>Any Job offer or Projects to discuss?<br>
+                    </h2>
+                    <h2 class="text-blue-900 font-semibold text-xl mt-4 mb-4">
+                        Contact me on
+                    </h2>
+                    <p class="text-blue-950 font-semibold text-md">
+                        <a href="mailto:find.sazzadali@gmail.com">
+                            <span class="font-bold">
+                                find.sazzadali@gmail.com 
+                            </span>
+                        </a>
+                    </p>
                 </div>
-                </section> 
+                <h3 class="text-blue-900 font-semibold text-xl">
+                    OR
+                </h3>
+                <!-- social links here -->
+                <div class="flex flex-row lg:flex-row items-center gap-5 mb-3 social-links-img">
+                    <a href="https://www.linkedin.com/in/sazzadali/" target="_blank">
+                        <img height="35" width="35" src="/assets/images/linkedin-box-fill.svg" alt="LinkedIn-Sazzad">
+                    </a>
+                    <a href="https://github.com/SazzGitHub" target="_blank">
+                        <img height="35" width="35" src="/assets/images/github-fill.svg" alt="SazzGitHub">
+                    </a>
+                    <a href="https://www.tiktok.com/@developer.sazzad" target="_blank">
+                        <img height="35" width="35" src="/assets/images/tiktok-fill.svg" alt="@developer.sazzad">
+                    </a>
+                    <a href="https://www.linkedin.com/company/craftcodestudio" target="_blank">
+                        <img height="35" width="35" src="/assets/images/briefcase-fill.svg" alt="CraftCode STUDIO">
+                    </a>
+                </div>
+            </div>
         </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
